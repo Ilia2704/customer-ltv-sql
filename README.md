@@ -3,6 +3,12 @@ Risk-adjusted Customer Lifetime Value (Economic Value) modeling using pure SQL
 
 (CLTV × credit &amp; retention risk: PD, LGD, EAD)
 
+to run 
+
+```bash 
+./scripts/redshift_run_sql.sh cte/client_list.sql
+```
+
 # customer-ltv-sql
 
 This repository presents a **risk-oriented Customer Lifetime Value framework**, implemented entirely in **SQL**.
@@ -108,4 +114,3 @@ Economic Value reflects the **true economic contribution** of a customer after a
 - EV < 0 → customer destroys value.
 - EV ≪ CLTV → profitability eroded by risk.
 - EV ≈ CLTV → stable, low-risk customer.
-
